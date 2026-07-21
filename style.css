@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head-section{
+    background-image: url("assets/yatra-head-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    padding: 25px 30px;
+    border-radius: 30px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+}
+
+.nav-menu-section{
+    display: none;
+}
+
+.nav-button{
+    display: none;
+}
+
+.ham-bar{
+    background-color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.header-heading{
+    font-family: "Poppins";
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
