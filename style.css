@@ -9,11 +9,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px;
-    padding: 25px 30px;
+    padding: 25px 0px;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navbar{
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,6 +56,32 @@
     color: white;
     font-weight: bold;
     text-align: center;
-    font-size: 30px;
-    margin-top: 50px;
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+.header-subheading{
+    font-family: "Poppins";
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 05px;
+    width: 89%;
+}
+
+.header-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    color: black;
+    border: none;
+    height: 60px;
+    width: 200px;
+    font-family: "Poppins";
+    border-radius: 200px;
+    margin: 20px 0px;
+    font-size: 16px;
 }
