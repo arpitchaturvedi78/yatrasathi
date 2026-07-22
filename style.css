@@ -9,7 +9,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px;
-    padding: 25px 0px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -19,10 +18,15 @@
 }
 
 .navbar{
+    background-color: rgba(255, 255, 255, 0.195);
+    backdrop-filter: blur(2px);
+    margin-top: 30px;
     width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    border-radius: 200px;
 }
 
 .logo-section{
@@ -31,7 +35,8 @@
 }
 
 .logo{
-    width: 100px;
+    margin-left: 10px;
+    width: 100px
 }
 
 .nav-menu-section{
@@ -59,7 +64,7 @@
     font-weight: bold;
     text-align: center;
     font-size: 28px;
-    margin-top: 45px;
+    margin-top: 20px;
 }
 
 .header-subheading{
@@ -86,6 +91,11 @@
     border-radius: 200px;
     margin: 20px 0px 40px;
     font-size: 15px;
+    transition: all .3s linear;
+}
+
+.header-button:hover{
+    background-color: #B7E2A9;
 }
 
 .famous-destination{
@@ -105,6 +115,12 @@
     flex-direction: column;
     align-items: center;
     border-radius: 40px;
+    transition: all .3s linear;
+}
+
+.famous-destination-card:hover{
+    animation-play-state: paused;
+    transform: scale(1.02);
 }
 
 .destination-img{
@@ -334,6 +350,190 @@
     font-weight: 300;
 }
 
+.packages-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.packages-main{
+    width: 95%;
+}
+
+.packages-cards-track{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.packages-cards{
+    background-color: #f2f0f0;
+    font-family: "Poppins";
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.packages-cards:hover{
+    background-color: #b7e2a97b;
+}
+
+.packages-img{
+    margin: 10px;
+    border-radius: 30px;
+    width: 95%;
+}
+
+.packages-title{
+    font-size: 20px;
+    width: 90%;
+    margin: 0px 20px;
+    font-weight: 600;
+}
+
+.packages-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 00px;
+    width: 90%;
+}
+
+.packages-bar-head{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #747B72;
+}
+
+.packages-name{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.packages-footer{
+    width: 90%;
+    margin: 0px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.packages-prices{
+    display: flex;
+    align-items: center;
+}
+
+.price-title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.price-timeline{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
+    color: #747B72;
+}
+
+.view-details{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 4px;
+    color: #3e3f3e;
+}
+
+.testimonials-section{
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+    font-family: "Poppins";
+    color: white;
+    overflow: hidden;
+}
+
+.testimonials-heading{
+    font-size: 25px;
+    margin: 20px 0px;
+}
+
+@keyframes scrolltesti {
+	0% { 
+        transform: translateX(0);
+    }
+
+    100% { 
+        transform: translateX(-50%);
+    }
+}
+
+.testimonials-cards-track{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+    animation: scrolltesti 30s linear infinite;
+}
+
+.testimonials-cards-track:hover{
+    animation-play-state: paused;
+}
+
+.testimonialscard{
+  background-color: white;
+  border-radius: 40px;
+  transition: all .2s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0px;
+  width: 400px;
+  transition: all .3s linear;
+  margin: 30px 0px 0px;
+}
+
+.testimonialscard:hover{
+    animation-play-state: paused;
+    transform: scale(1.03);
+}
+
+.testiprofile{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 200px;
+  background-color: #b7e2a96f;
+}
+
+.testiname{
+  color: black;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.feedback{
+  color: rgba(0, 0, 0, 0.788);
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 200;
+  width: 80%;
+  text-align: center;
+}
+
+.ratinglist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px 15px 0px;
+}
 
 
 /* for Tablet */
@@ -352,14 +552,31 @@
 .services-heading{
     width: 70%;
 }
+
+.packages-cards-track{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.packages-cards{
+    width: 300px;
+}
+
+.packages-title{
+    font-size: 16px;
+    font-weight: 500;
+
 }
 
 /* For Desktop */
 
 @media (min-width:1000px) {
 
-.head-section{
-    padding: 0;
+.navbar{
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
 }
 
 .nav-menu-section{
@@ -403,6 +620,7 @@
 
 .nav-button{
     display: flex;
+    align-items: center;
 }
 
 .getstarted{
@@ -413,13 +631,17 @@
     background-color: black;
     color: white;
     border: none;
-    height: 60px;
+    height: 55px;
     width: 200px;
     font-family: "Poppins";
     border-radius: 200px;
-    margin: 20px 0px 40px;
     font-size: 15px;
-    box-shadow: inset 
+    transition: all .3s linear; 
+}
+
+.getstarted:hover{
+    background-color: white;
+    color: black;
 }
 
 .common-heading{
@@ -445,6 +667,26 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.packages-cards-track{
+    justify-content: start;
+}
+
+.packages-title{
+    font-size: 16px;
+    font-weight: 500;
+
+.testimonials-heading{
+    font-size: 35px;
+    margin: 20px 0px;
+}
+
+}
+
+@media (min-width:1300px) {
+.packages-cards-track{
+    justify-content: space-between;
 }
 
 }
