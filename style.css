@@ -600,8 +600,13 @@
     border: 1.3px solid #4B6642;
     color: #4B6642;
     font-size: 19px;
+    transition: all .3s linear;
 }
 
+.footer-social-card:hover{
+    background-color: #4B6642;
+    color: white;
+}
 .copyright{
     font-size: 14px;
     font-weight: 300;
@@ -791,7 +796,7 @@
 }
 
 .footer-logo{
-    width: 200px;
+    width: 160px;
 }
 
 .footer-about{
