@@ -535,6 +535,93 @@
   margin: 15px 0px 15px 0px;
 }
 
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    font-family: "Poppins";
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-top-section{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.footer-logo{
+    width: 100px;
+}
+
+.footer-about{
+    font-size: 14px;
+    font-weight: 300;
+    width: 85%;
+}
+
+.footer-web-information{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-menu{
+    list-style: none;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    margin: 0px 20px ;
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-social-head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-social-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b7e2a975;
+    width: 40px;
+    height: 40px;
+    border-radius: 300px;
+    border: 1.3px solid #4B6642;
+    color: #4B6642;
+    font-size: 19px;
+}
+
+.copyright{
+    font-size: 14px;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+
+.foot-mark{
+    width: 150%;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
 
 /* for Tablet */
 
@@ -567,6 +654,8 @@
 .packages-title{
     font-size: 16px;
     font-weight: 500;
+
+}
 
 }
 
@@ -670,23 +759,60 @@
 }
 
 .packages-cards-track{
-    justify-content: start;
+    justify-content: space-evenly;
 }
 
 .packages-title{
     font-size: 16px;
     font-weight: 500;
+}
 
 .testimonials-heading{
     font-size: 35px;
     margin: 20px 0px;
 }
 
+.footer-top-section{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.footer-web-information{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu{
+    flex-direction: row;
+    gap: 15px;
+    margin: 20px 0px;
+
+}
+
+.footer-logo{
+    width: 200px;
+}
+
+.footer-about{
+    font-size: 15px;
+    font-weight: 300;
+    width: 75%;
+}
+
+.footer-social{
+    align-items: end;
+}
+
+.foot-mark{
+    margin-left: 60px;
+}
+
 }
 
 @media (min-width:1300px) {
 .packages-cards-track{
-    justify-content: space-between;
+    gap: 30px;
 }
 
 }
